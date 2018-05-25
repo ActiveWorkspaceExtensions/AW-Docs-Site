@@ -1,0 +1,177 @@
+/**********
+ Reset
+***********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/**********
+ Text
+***********/
+html {
+    font-size: 10px;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, a,
+li, ul {
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    text-align: left;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+small {
+  font-size: 80%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+    margin: 30px 0;
+}
+
+li, li > *, dt, dd {
+    margin: 10px 0;
+}
+
+pre, code {
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+}
+
+
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2.2rem;}
+h4 {font-size: 2rem;}
+h5 {font-size: 2rem;}
+h6 {font-size: 1.6rem;}
+
+p, a, li, dt, dd, tr, th {
+    font-size: 16px;
+}
+
+a {
+    color: #0072be;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:hover {
+    color: #23537c;
+}
+
+
+blockquote {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    border-radius: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-none {
+  float: none !important;
+}

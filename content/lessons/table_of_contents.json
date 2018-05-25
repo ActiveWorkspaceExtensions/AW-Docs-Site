@@ -1,0 +1,35 @@
+{
+  "id": "table-of-contents",
+  "chapters": [
+    {
+      "title": "Setup",
+          "entries": [
+            {
+              "entry": "./Environment_Setup.md"
+            },
+            {
+              "entry": "./lesson_two.md"
+            },
+            {
+              "entry": "./lesson_three.md"
+            }
+          ]
+    },
+    {
+      "title": "Get Started", 
+          "entries": [
+            {
+              "entry": "./lesson_five.md"
+            }
+          ]
+    },
+    {
+      "title": "Examples",
+      "entries": [
+        {
+          "entry": "./lesson_six.md"
+        }
+      ]
+    }
+  ]
+}

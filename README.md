@@ -1,114 +1,90 @@
-<div align="center">
-    <img src="static/logos/logo-1024.png" alt="Logo" width='100px' height='100px'/>
-</div>
+# Active Workspace Extentions Docs Starter
 
-# Gatsby Docs Starter 1.0
+#### This Project was forked from [Gatsby Docs Starter](https://github.com/ericwindmill/gatsby-starter-docs)
 
-#### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
+# Getting started
 
-A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/).
+## Check your development environment
 
-Developed for creating Documentation or Tutorial websites.
+Git - If you need to install Git [download from here](https://git-scm.com/). You can also download the [GitHub Desktop App](https://desktop.github.com/) for the point and click people. If you aren't sure... you should probably install it> If nothing else it can't hurt to get the newest version
 
-### [Demo](https://gatsby-docs-starter.netlify.com/)
+Let's check first that you have everything set up to start creating with Gatsby.
+You will need a recent version of Node.js installed.
 
-This template provides everything but the content. You could just write all your lessons in markdown files, configure a few lines of code, and have a completely built documentation website.
+Node.js is a programming tool for running JavaScript on servers and in your
+computer's terminal. Gatsby is built using Node.js.
 
-## Changelog
+Open a terminal window. We are big fans of VS Code. It has a terminal built in! Check out [Visual Studio Code](https://code.visualstudio.com/). See
+[terminal instructions for Mac users](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/) and
+[terminal instructions for Windows users](https://www.quora.com/How-do-I-open-terminal-in-windows). In your terminal window, type `node --version` and hit ENTER, then `npm --version` and hit ENTER (tip: to run a specified command, you must type the command into your terminal and then press ENTER. Then the command will run).
 
-Updated 3/17/18
+You should see something like:
 
-* Updated Table of Contents system: 
-   * You now define your table of contents in the 'table_of_contents.json' file under the 'content' folder.
-   * The GraphQl query in your 'lesson' template should match your table_of_contents.
-   * The `TableOfContents` component does the rest.
+![Check if node.js/npm is installed](static/check-versions.png)
 
-This requires more upfront work, but I've found it to be infintely better when your page count gets high. It's easier to move things around and have the ToC **just work**.
+Gatsby supports versions of Node back to v6 and npm to v3.
 
-For a more complicated example, you can look at the repo for the site I built this for: [Flutter By Example](https://github.com/ericwindmill/flutter-by-example-wwww)/
-   
-* Basic styling added to the 'post' template
-* Mobile responsive
-    
-## Features
+If you don't have Node.js installed, go to https://nodejs.org/ and install the
+recommended version for your operating system.
 
-<div align="center">
-    <img src="static/screen-shot-v0-1.png" alt="Logo" width='800px' />
-</div>
-<div align="center">
-    <img src="static/screen-shot-v0-2.png" alt="Logo" width='800px' />
-</div>
+## Clone the Repo
 
-### New Features
+If you are using the terminal, type the line below in the directory you want the site to live:
 
-* Basic UI
-* Styled Components CSS w/ ThemeProvider for easy cross-site UI changes.
-* Custom code-highlight theme
-* React Icons
-* Configured to auto generate documentation 'Table of Contents'
-* You can also have blog posts.
+```
+git clone https://github.com/ActiveWorkspaceExtensions/AW-Docs-Site.git
+```
+You can also clone the repo from the GitHub Desktop App.
 
-### Updates
+Open the directory ```AW-Docs-Site``` in your terminal.
 
-* December 23, 2017 - The 'Docs' page is now mobile responsive.
+## Install Gatsby Dependancies
 
-### These are the features from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter), which remain:  
-* Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-* Separate components for everything
-* High configurability:
-  * User information
-  * User social profiles
-  * Copyright information
-  * More!
-* Author segment
-  * Name
-  * Location
-  * Description
-  * Links
-  * Follow Me button
-* Posts in Markdown
-  * Code syntax highlighting
-  * Embed YouTube videos
-  * Embed Tweets
-* Tags
-  * Separate page for posts under each tag
-* Categories
-  * Separate page for posts under each category
-* Disqus support
-  * Notifications about new disqus comments
-* Google Analytics support
-* NPM scripts for GitHub Pages deployment
-* Social features
-  * Twitter tweet button
-  * Facebook share/share count
-  * Reddit share/share count
-  * Google+ share button
-  * LinkedIn share button
-  * Telegram share button
-* SEO
-  * Sitemap generation
-  * robots.txt
-  * General description tags
-  * Schema.org JSONLD (Google Rich Snippets)
-  * OpenGraph Tags (Facebook/Google+/Pinterest)
-  * Twitter Tags (Twitter Cards)
-* RSS feeds
-* Loading progress for slow networks
-* Offline support
-* Web App Manifest support
-* Development tools
-  * ESLint for linting
-  * Prettier for code style
-  * Remark-Lint for linting Markdown
-  * write-good for linting English prose
-  * gh-pages for deploying to GitHub pages
-  * CodeClimate configuration file and badge
+Unfortunatly we aren't talking about that great Leonardo DiCaprio movie. Gatsby is a static site generator used to convert easy to make [Markdown](https://www.markdownguide.org/getting-started) files into great looking web pages. First install Gatsby's command line program by running the following:
 
-*** 
+```sh
+npm install --global gatsby-cli
+```
 
-### Notes
- [Ruben Harutyunyan](https://github.com/Vagr9K) did most of the hard work with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
- The rest of the credit is due to [Gatsby](https://github.com/gatsbyjs/gatsby/).
- 
+Next we are going to get all the packages needed to run the site. Run:
 
- WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+```sh
+nmp install
+```
+
+Grab a drink while you wait.
+
+## Running locally
+
+To build the site and start the local dev server type:
+
+Gatsby has a built-in development server. Let's start it up by running the
+following command:
+
+```sh
+gatsby develop
+```
+
+You should shortly see some text, close to the bottom, that says `The development server is listening at:` [http://localhost:8000](http://localhost:8000). Open that address in your
+browser and...
+
+Yeah! It's working!!!
+
+Too cool 😎
+
+Gatsby's development server is a "hot reloading" server, meaning any change you
+make to your React.js page components (and later we'll learn, your data files)
+will be immediately visible and/or loaded in the browser.
+
+This is huge because it makes development so much faster and fun.
+
+## Extra Commands
+
+- You can chack the ```package.josn``` file for the scripts. 
+- ```npm clean``` will clean out the public file and anything built.
+- ```gatsby build``` will do a full production build of the site. There will be a ```public``` folder that is compressed and contains all of the static files. The contents of this folder is what the ```ActiveWorkspaceExtensions.github.io``` repo holds. Any changes need to be pushed to that folder from a fresh build.
+- I have a script that will automatically do that, ```npm deploy```. The only issue is that it uses the current directory as the repo location.
+
+## Markdown Help
+
+Markdown is pretty cool, but there is a special way to get things styled the way you want it. Check out the [Markdown Guide](https://www.markdownguide.org/getting-started) to help you get started.

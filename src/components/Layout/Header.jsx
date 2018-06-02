@@ -16,7 +16,7 @@ const SiteContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: ${props => props.theme.brand};
+  background: ${props => props.theme.branddarker};
   padding: 15px;
 `
 

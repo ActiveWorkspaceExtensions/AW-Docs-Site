@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import UserLinks from '../UserLinks'
+import config from '../../../data/SiteConfig'
 
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background: ${props => props.theme.brand};
+  background: ${props => props.theme.branddarker};
 
   .nav-link {
     margin-right: 10px;
@@ -55,6 +56,7 @@ class Navigation extends React.Component {
       <NavContainer>
         <section>
           <Link className="nav-link" to="/">
+          <img src={config.myTCLogo} width="25px" alt="" />
             {' '}
             HOME{' '}
           </Link>

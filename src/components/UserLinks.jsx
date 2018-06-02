@@ -29,17 +29,11 @@ class UserLinks extends Component {
   render() {
     return (
       <Container className="user-links">
-        <UserIcon href="https://github.com/ericwindmill">
+        <UserIcon href="https://github.com/ActiveWorkspaceExtensions">
           <FaGithubAlt style={iconStyle} />
         </UserIcon>
-        <UserIcon href="https://twitter.com/ericwindmill?lang=en">
+        <UserIcon href="https://twitter.com/SiemensPLM">
           <FaTwitter style={iconStyle} />
-        </UserIcon>
-        <UserIcon href="https://www.messenger.com/t/eric.windmill">
-          <MdMessage style={iconStyle} />
-        </UserIcon>
-        <UserIcon href="mailto:eric@ericwindmill.com">
-          <MdEmail style={iconStyle} />
         </UserIcon>
       </Container>
     )

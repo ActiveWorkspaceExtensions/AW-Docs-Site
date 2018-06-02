@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-
+import MainHeader from '../components/Layout/Header'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import CtaButton from '../components/CtaButton'
@@ -16,21 +16,21 @@ class Index extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO postEdges={allSEOMarkdown} />
         <main>
+        <MainHeader
+            siteTitle={config.siteTitle}
+            siteDescription={config.siteDescription}
+            location={this.props.location}
+            logo={config.siteLogo}
+          />
           <IndexHeadContainer>
-            <Navigation />
+
             <Hero>
-              <img src={config.siteLogo} width="150px" alt="" />
               <h1>{config.siteTitle}</h1>
               <h4>{config.siteDescription}</h4>
             </Hero>
           </IndexHeadContainer>
           <BodyContainer>
-            <h2>A Gatsby Template for Content</h2>
-            <p>
-              Made for modern documentation sites. Table of Contents
-              automatically generated from markdown files.{' '}
-            </p>
-            <CtaButton to={'/lesson-one'}>See Your First Post</CtaButton>
+            <CtaButton to={'/environment-setup'}>Getting Started with your</CtaButton>
 
             <div className="contributors">
               <p>

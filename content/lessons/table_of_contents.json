@@ -8,10 +8,7 @@
               "entry": "./Environment_Setup.md"
             },
             {
-              "entry": "./lesson_two.md"
-            },
-            {
-              "entry": "./lesson_three.md"
+              "entry": "./Express_Setup.md"
             }
           ]
     },
@@ -19,7 +16,10 @@
       "title": "Get Started", 
           "entries": [
             {
-              "entry": "./lesson_five.md"
+              "entry": "./My_First_Extension.md"
+            },
+            {
+              "entry": "./lesson_two.md"
             }
           ]
     },
@@ -27,7 +27,7 @@
       "title": "Examples",
       "entries": [
         {
-          "entry": "./lesson_six.md"
+          "entry": "./Location_Example.md"
         }
       ]
     }
